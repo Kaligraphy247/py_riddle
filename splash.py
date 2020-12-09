@@ -4,8 +4,9 @@ def typingPrint(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
-        time.sleep(0.01) # 0.5 for half a second... extra decimal places to make typePrint faster e.g 0.005
+        time.sleep(0.01)
 
+# redundant for this module;
 def typingInput():
     for character in text:
         sys.stdout.write(character)
@@ -13,6 +14,7 @@ def typingInput():
         time.sleep(0.05)
     value = input()  
     return value
+# redundant for this module;
 
 def clearScreen():
     os.system("cls")
@@ -25,5 +27,5 @@ typingPrint("###                                 ###\n")
 typingPrint("#######################################\n")
 typingPrint("#######################################\n")
 
-time.sleep(1)
+time.sleep(2)
 clearScreen()

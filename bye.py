@@ -24,5 +24,6 @@ typingPrint("###               Bye!!             ###\n")
 typingPrint("###                                 ###\n")
 typingPrint("#######################################\n")
 typingPrint("#######################################\n")
+time.sleep(2)
 
 clearScreen()

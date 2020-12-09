@@ -5,6 +5,7 @@ riddles from https://parade.com/947956/parade/riddles/
 
 """
 
+#FUNCTIONS HERE
 import splash, time, sys,os
 
 def typingPrint(text):
@@ -16,6 +17,8 @@ def typingPrint(text):
 def clearScreen():
     os.system("cls")
 
+
+# PROGRAM STARTS HERE...
 typingPrint("Some Riddles to test your knowledge!\n")
 time.sleep(2)
 typingPrint("Some Riddles may have one word answers.\n")
@@ -74,7 +77,8 @@ answer05 =  str(input().lower())
 if answer05 == "age":
     typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Age' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'Age'\n")
+time.sleep(1.5)
 
 typingPrint("Now, to hard Riddles.....")
 time.sleep(2)
@@ -168,7 +172,7 @@ elif answer19 == "roads":
 else:
     typingPrint("Wrong, the right answer is 'Road/Roads' \n Next...\n")
 
-"""
+
 typingPrint("10. With pointed fangs I sit and wait; with piercing force I crunch out fate; grabbing victims, proclaiming might; physically joining with a single bite. What am I?\n")
 answer110 = str(input().lower())
 if answer110 == "stapler":
@@ -178,35 +182,23 @@ elif answer110 == "a stapler":
 elif answer110 == "staplers":
      typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Stapler/Staplers' \n Next...\n")
-
-
-clearScreen()
-
-
-typingPrint("Some Bonus Riddle, you may terminate now if you wish to stop")
+    typingPrint("Wrong, the right answer is 'Stapler/Staplers'\n")
+"""
 time.sleep(2)
-typingPrint("You may terminate now if you wish to stop")
 clearScreen()
 
 
-typingPrint("a.  I have lakes with no water, mountains with no stone and cities with no buildings. What am I?\n")
-answer_a = str(input().lower())
-if answer_a == "map":
-     typingPrint("Correct!\n")
-elif answer_a == "a map":
-     typingPrint("Correct!\n")
-elif answer_a == "maps":
-    typingPrint("Correct!\n")
-else:
-    typingPrint("Wrong, the right answer is 'Maps' \n Next...\n")
+typingPrint("Some Bonus Riddles 🎃😀😁\n")
+time.sleep(1)
+typingPrint("You may terminate now if you wish to stop.\n")
+time.sleep(1)
+typingPrint("Do you want to play bonus round? Yes/No\n" + ": ")
+bonus_query = str(input().lower())
+while bonus_query == "yes":
+    import bonus
 
-
-typingPrint("b. What does man love more than life, hate more than death or mortal strife; that which contented men desire; the poor have, the rich require; the miser spends, the spendthrift saves, and all men carry to their graves?\n")
-answer_b = str(input().lower())
-if answer_b == "nothing":
-     typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Nothing' \n Next...\n")
+    clearScreen()
+
 import bye
 
