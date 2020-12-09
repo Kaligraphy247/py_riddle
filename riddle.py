@@ -1,5 +1,9 @@
 # Simple and interactive riddles written with python
 # back links here
+""" 
+riddles from https://parade.com/947956/parade/riddles/ 
+
+"""
 
 import splash, time, sys,os
 
@@ -13,18 +17,23 @@ def clearScreen():
     os.system("cls")
 
 typingPrint("Some Riddles to test your knowledge!\n")
+time.sleep(2)
 typingPrint("Some Riddles may have one word answers.\n")
+time.sleep(1)
 typingPrint("Let's start with something simple.\n")
+time.sleep(1)
 
-
+"""
 typingPrint("1. What has to be broken before you can use it?\n")
 answer01 = str(input().lower())
 if answer01 == "egg":
     typingPrint("Correct!\n")
 elif answer01 == "an egg":
     typingPrint("Correct!\n")
+elif answer01 =="eggs":
+     typingPrint("Correct!\n")
 else: 
-    typingPrint("Wrong, correct answer is 'an egg'\n ")
+    typingPrint("Wrong, correct answer is 'an Egg/Eggs'\n Next...\n")
     typingPrint("next\n")
 
 
@@ -34,6 +43,8 @@ if answer02 == "candle":
     typingPrint("Correct!\n")
 elif answer02 == "a candle":
     typingPrint("Correct!\n")
+elif answer02 == "candles":
+     typingPrint("Correct!\n")
 else:
     typingPrint("Wrong, the right answer is 'candle'\n Next...\n")
 
@@ -57,7 +68,7 @@ elif answer04 == "the future":
 else:
     typingPrint("Wrong, the right answer is ' the future' \n Next...\n")
 
-
+"""
 typingPrint("5. What goes up but never comes down?\n")
 answer05 =  str(input().lower())
 if answer05 == "age":
@@ -65,7 +76,8 @@ if answer05 == "age":
 else:
     typingPrint("Wrong, the right answer is 'Age' \n Next...\n")
 
-typingPrint("Now, to hard Riddles.")
+typingPrint("Now, to hard Riddles.....")
+time.sleep(2)
 clearScreen()
 
 
@@ -76,7 +88,7 @@ if answer11 == "silence":
 else:
     typingPrint("Wrong, the right answer is 'Silence' \n Next...\n")
 
-
+"""
 typingPrint("2. What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?\n")
 answer12 = str(input().lower())
 if answer12 == "river":
@@ -113,7 +125,7 @@ typingPrint("5. The more you take, the more you leave behind. What are they?\n")
 answer15 = str(input().lower())
 if answer15 =="footsteps":
      typingPrint("Correct!\n")
-elif: answer15 =="footstep":
+elif answer15 =="footstep":
      typingPrint("Correct!\n")
 else:
     typingPrint("Wrong, the right answer is 'Footstep/Footsteps' \n Next...\n")
@@ -156,7 +168,7 @@ elif answer19 == "roads":
 else:
     typingPrint("Wrong, the right answer is 'Road/Roads' \n Next...\n")
 
-
+"""
 typingPrint("10. With pointed fangs I sit and wait; with piercing force I crunch out fate; grabbing victims, proclaiming might; physically joining with a single bite. What am I?\n")
 answer110 = str(input().lower())
 if answer110 == "stapler":
@@ -170,8 +182,11 @@ else:
 
 
 clearScreen()
+
+
 typingPrint("Some Bonus Riddle, you may terminate now if you wish to stop")
-print("You may terminate now if you wish to stop")
+time.sleep(2)
+typingPrint("You may terminate now if you wish to stop")
 clearScreen()
 
 
@@ -193,4 +208,5 @@ if answer_b == "nothing":
      typingPrint("Correct!\n")
 else:
     typingPrint("Wrong, the right answer is 'Nothing' \n Next...\n")
+import bye
 
