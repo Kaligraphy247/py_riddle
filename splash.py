@@ -4,7 +4,7 @@ def typingPrint(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
-        time.sleep(0.02) # 0.5 for half a second... extra decimal places to make typePrint faster e.g 0.005
+        time.sleep(0.01) # 0.5 for half a second... extra decimal places to make typePrint faster e.g 0.005
 
 def typingInput():
     for character in text:
