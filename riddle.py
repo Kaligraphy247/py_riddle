@@ -26,7 +26,7 @@ time.sleep(1)
 typingPrint("Let's start with something simple.\n")
 time.sleep(1)
 
-"""
+
 typingPrint("1. What has to be broken before you can use it?\n")
 answer01 = str(input().lower())
 if answer01 == "egg":
@@ -71,7 +71,7 @@ elif answer04 == "the future":
 else:
     typingPrint("Wrong, the right answer is ' the future' \n Next...\n")
 
-"""
+
 typingPrint("5. What goes up but never comes down?\n")
 answer05 =  str(input().lower())
 if answer05 == "age":
@@ -92,7 +92,7 @@ if answer11 == "silence":
 else:
     typingPrint("Wrong, the right answer is 'Silence' \n Next...\n")
 
-"""
+
 typingPrint("2. What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?\n")
 answer12 = str(input().lower())
 if answer12 == "river":
@@ -183,7 +183,7 @@ elif answer110 == "staplers":
      typingPrint("Correct!\n")
 else:
     typingPrint("Wrong, the right answer is 'Stapler/Staplers'\n")
-"""
+
 time.sleep(2)
 clearScreen()
 
@@ -202,3 +202,4 @@ else:
 
 import bye
 
+#PROGRAM ENDS HERE...
