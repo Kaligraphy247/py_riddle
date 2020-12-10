@@ -33,11 +33,10 @@ if answer01 == "egg":
     typingPrint("Correct!\n")
 elif answer01 == "an egg":
     typingPrint("Correct!\n")
-elif answer01 =="eggs":
+elif answer01 == "eggs":
      typingPrint("Correct!\n")
 else: 
-    typingPrint("Wrong, correct answer is 'an Egg/Eggs'\n Next...\n")
-    typingPrint("next\n")
+    typingPrint("Wrong, correct answer is 'an Egg/Eggs'\nNext...\n")
 
 
 typingPrint("2. I’m tall when I’m young, and I’m short when I’m old. What am I?\n")
@@ -49,7 +48,7 @@ elif answer02 == "a candle":
 elif answer02 == "candles":
      typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'candle'\n Next...\n")
+    typingPrint("Wrong, the right answer is 'candle'\nNext...\n")
 
 
 typingPrint("3. What is full of holes but still holds water?\n")
@@ -59,7 +58,7 @@ if answer03 == "sponge":
 elif answer03 == "a sponge":
     typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, correct answer is 'a sponge' \n Next...\n")
+    typingPrint("Wrong, correct answer is 'a sponge' \nNext...\n")
 
 
 typingPrint("4. What is always in front of you but can’t be seen?\n")
@@ -69,7 +68,7 @@ if answer04 == "future":
 elif answer04 == "the future":
     typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is ' the future' \n Next...\n")
+    typingPrint("Wrong, the right answer is ' the future' \nNext...\n")
 
 
 typingPrint("5. What goes up but never comes down?\n")
@@ -90,7 +89,7 @@ answer11 = str(input().lower())
 if answer11 == "silence":
     typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Silence' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'Silence' \nNext...\n")
 
 
 typingPrint("2. What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?\n")
@@ -102,7 +101,7 @@ elif answer12 == "a river":
 elif answer12 =="rivers":
     typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'River/Rivers' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'River/Rivers' \nNext...\n")
 
 
 typingPrint("3. What can fill a room but takes up no space?\n")
@@ -110,7 +109,7 @@ answer13 = str(input().lower())
 if answer13 == "light":
      typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Light' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'Light' \nNext...\n")
 
 
 typingPrint("4. If you drop me I’m sure to crack, but give me a smile and I’ll always smile back. What am I?\n")
@@ -122,7 +121,7 @@ elif answer14 == "a mirror":
 elif answer14 == "mirrors":
      typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Mirror/Mirrors' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'Mirror/Mirrors' \nNext...\n")
 
 
 typingPrint("5. The more you take, the more you leave behind. What are they?\n")
@@ -132,7 +131,7 @@ if answer15 =="footsteps":
 elif answer15 =="footstep":
      typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Footstep/Footsteps' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'Footstep/Footsteps' \nNext...\n")
 
 
 typingPrint("6. I turn once, what is out will not get in. I turn again, what is in will not get out. What am I?\n")
@@ -144,7 +143,7 @@ elif answer16 == "a key":
 elif answer16 =="keys":
      typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Key/Keys' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'Key/Keys' \nNext...\n")
 
 
 typingPrint("7.  People make me, save me, change me, raise me. What am I?\n")
@@ -152,7 +151,7 @@ answer17 = str(input().lower())
 if answer17 =="money":
      typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Money' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'Money' \nNext...\n")
 
 
 typingPrint("8. I am always hungry and will die if not fed, but whatever I touch will soon turn red. What am I?\n")
@@ -160,7 +159,7 @@ answer18 = str(input().lower())
 if answer18 == "fire":
      typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Fire' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'Fire' \nNext...\n")
 
 
 typingPrint("9. What goes through cities and fields, but never moves?\n")
@@ -170,7 +169,7 @@ if answer19 == "road":
 elif answer19 == "roads":
      typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Road/Roads' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'Road/Roads' \nNext...\n")
 
 
 typingPrint("10. With pointed fangs I sit and wait; with piercing force I crunch out fate; grabbing victims, proclaiming might; physically joining with a single bite. What am I?\n")

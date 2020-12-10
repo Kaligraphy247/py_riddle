@@ -20,7 +20,7 @@ elif answer_a == "a map":
 elif answer_a == "maps":
     typingPrint("Correct!\n")
 else:
-    typingPrint("Wrong, the right answer is 'Maps' \n Next...\n")
+    typingPrint("Wrong, the right answer is 'Maps' \nNext...\n")
 
 
 typingPrint("b. What does man love more than life, hate more than death or mortal strife; that which contented men desire; the poor have, the rich require; the miser spends, the spendthrift saves, and all men carry to their graves?\n")
