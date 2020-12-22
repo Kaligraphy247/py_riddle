@@ -28,8 +28,3 @@ typingPrint(Fore.MAGENTA + "#######################################\n") # THIS I
 time.sleep(2)
 
 clearScreen()
-
-
-typingPrint(Fore.YELLOW + "text in yellow")
-print(Fore.RESET)
-typingPrint("Normal text should appear here")
