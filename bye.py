@@ -1,4 +1,5 @@
-import time, sys,os
+import time, sys,os, colorama
+from colorama import Fore, Back, Style
 
 def typingPrint(text):
     for character in text:
@@ -17,13 +18,18 @@ def typingInput():
 def clearScreen():
     os.system("cls")
 
-typingPrint("#######################################\n")
-typingPrint("#######################################\n")
-typingPrint("###                                 ###\n")
-typingPrint("###              Bye!!!             ###\n")
-typingPrint("###                                 ###\n")
-typingPrint("#######################################\n")
-typingPrint("#######################################\n")
+typingPrint(Fore.RED + "#######################################\n")
+typingPrint(Fore.YELLOW + "#######################################\n") # THIS IS SUPPOSED TO REFLECT ORANGE 😅
+typingPrint(Fore.LIGHTYELLOW_EX + "###                                 ###\n")
+typingPrint(Fore.GREEN + "###              Bye!!!             ###\n")
+typingPrint(Fore.LIGHTBLUE_EX + "###                                 ###\n")
+typingPrint(Fore.BLUE + "#######################################\n") # THIS IS SUPPOSED TO REFLECT INDIGO 😅
+typingPrint(Fore.MAGENTA + "#######################################\n") # THIS IS SUPPOSED TO REFLECT PURPLE 😅
 time.sleep(2)
 
 clearScreen()
+
+
+typingPrint(Fore.YELLOW + "text in yellow")
+print(Fore.RESET)
+typingPrint("Normal text should appear here")
