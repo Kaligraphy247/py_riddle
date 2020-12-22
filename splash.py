@@ -1,6 +1,8 @@
 import time, sys,os, colorama
 from colorama import Fore
+
 def typingPrint(text):
+    """ Displays text incessantly using the time.sleep() method """
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
