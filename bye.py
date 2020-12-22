@@ -20,7 +20,7 @@ def clearScreen():
 typingPrint("#######################################\n")
 typingPrint("#######################################\n")
 typingPrint("###                                 ###\n")
-typingPrint("###               Bye!!             ###\n")
+typingPrint("###              Bye!!!             ###\n")
 typingPrint("###                                 ###\n")
 typingPrint("#######################################\n")
 typingPrint("#######################################\n")
