@@ -1,5 +1,5 @@
-import time, sys,os
-
+import time, sys,os, colorama
+from colorama import Fore
 def typingPrint(text):
     for character in text:
         sys.stdout.write(character)
@@ -19,13 +19,15 @@ def typingInput():
 def clearScreen():
     os.system("cls")
 
-typingPrint("#######################################\n")
-typingPrint("#######################################\n")
-typingPrint("###                                 ###\n")
-typingPrint("###      Welcome to Py_Riddle!      ###\n")
-typingPrint("###                                 ###\n")
-typingPrint("#######################################\n")
-typingPrint("#######################################\n")
+typingPrint(Fore.RED + "#######################################\n")
+typingPrint(Fore.YELLOW + "#######################################\n")
+typingPrint(Fore.LIGHTYELLOW_EX + "###                                 ###\n")
+typingPrint(Fore.GREEN + "###      Welcome to Py_Riddle!      ###\n")
+typingPrint(Fore.LIGHTBLUE_EX + "###                                 ###\n")
+typingPrint(Fore.BLUE + "#######################################\n")
+typingPrint(Fore.MAGENTA + "#######################################\n")
+
+print(Fore.RESET)
 
 time.sleep(2)
 clearScreen()
