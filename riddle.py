@@ -7,7 +7,7 @@ riddles from https://parade.com/947956/parade/riddles/
 
 #FUNCTIONS HERE
 import splash, time, sys, os, colorama
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 
 def typingPrint(text):
     for character in text:
@@ -56,7 +56,7 @@ elif answer02 == "candles":
      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
      print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'candle'\nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'candle'\nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -70,7 +70,7 @@ elif answer03 == "a sponge":
     print(Style.RESET_ALL, Fore.RESET)
     print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, correct answer is 'a sponge' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, correct answer is 'a sponge' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -83,7 +83,7 @@ elif answer04 == "the future":
     typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
     print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is ' the future' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is ' the future' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -93,7 +93,7 @@ if answer05 == "age":
     typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
     print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'Age'\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'Age'\n")
     print(Style.RESET_ALL, Fore.RESET)
 time.sleep(1.5)
 
@@ -108,7 +108,7 @@ if answer11 == "silence":
     typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
     print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'Silence' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'Silence' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -124,7 +124,7 @@ elif answer12 =="rivers":
     typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
     print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'River/Rivers' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'River/Rivers' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -134,7 +134,7 @@ if answer13 == "light":
      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
      print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'Light' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'Light' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -150,7 +150,7 @@ elif answer14 == "mirrors":
      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
      print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'Mirror/Mirrors' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'Mirror/Mirrors' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -163,7 +163,7 @@ elif answer15 =="footstep":
      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
      print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'Footstep/Footsteps' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'Footstep/Footsteps' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -179,7 +179,7 @@ elif answer16 =="keys":
      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
      print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'Key/Keys' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'Key/Keys' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -189,7 +189,7 @@ if answer17 =="money":
      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
      print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'Money' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'Money' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -199,7 +199,7 @@ if answer18 == "fire":
      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
      print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'Fire' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'Fire' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -212,7 +212,7 @@ elif answer19 == "roads":
      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
      print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'Road/Roads' \nNext...\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'Road/Roads' \nNext...\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 
@@ -228,7 +228,7 @@ elif answer110 == "staplers":
      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
      print(Style.RESET_ALL, Fore.RESET)
 else:
-    typingPrint("Wrong, the right answer is 'Stapler/Staplers'\n")
+    typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'Stapler/Staplers'\n")
     print(Style.RESET_ALL, Fore.RESET)
 
 time.sleep(2)
