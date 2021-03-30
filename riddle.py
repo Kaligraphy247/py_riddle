@@ -19,7 +19,10 @@ def typingPrint(text):
         time.sleep(0.05) # 0.5 for half a second... extra decimal places to make typePrint faster e.g 0.005
 
 def clearScreen():
-    os.system("cls")
+    if os.name == 'nt':
+        os.system("cls")
+    elif os.name == 'posix':
+        os.system("clear")
 
 
 # PROGRAM STARTS HERE...
