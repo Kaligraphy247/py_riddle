@@ -8,17 +8,11 @@ def typingPrint(text):
         sys.stdout.flush()
         time.sleep(0.01)
 
-def typingInput():
-
-    for character in text:
-        sys.stdout.write(character)
-        sys.stdout.flush()
-        time.sleep(0.05)
-    value = input()  
-    return value
-
 def clearScreen():
-    os.system("cls")
+    if os.name == 'nt':
+        os.system("cls")
+    elif os.name == 'posix':
+        os.system("clear")
 
 typingPrint(Fore.MAGENTA + "#######################################\n") # THIS IS SUPPOSED TO REFLECT PURPLE 😅
 typingPrint(Fore.BLUE + "#######################################\n") # THIS IS SUPPOSED TO REFLECT INDIGO 😅

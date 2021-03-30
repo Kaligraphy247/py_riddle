@@ -8,18 +8,11 @@ def typingPrint(text):
         sys.stdout.flush()
         time.sleep(0.01)
 
-# redundant for this module;
-def typingInput():
-    for character in text:
-        sys.stdout.write(character)
-        sys.stdout.flush()
-        time.sleep(0.05)
-    value = input()  
-    return value
-# redundant for this module;
-
 def clearScreen():
-    os.system("cls")
+    if os.name == 'nt':
+        os.system("cls")
+    elif os.name == 'posix':
+        os.system("clear")
 
 typingPrint(Fore.RED + "#######################################\n")
 typingPrint(Fore.YELLOW + "#######################################\n")

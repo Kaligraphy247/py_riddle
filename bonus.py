@@ -11,7 +11,10 @@ def typingPrint(text):
 
 
 def clearScreen():
-    os.system("cls")
+    if os.name == 'nt':
+        os.system("cls")
+    elif os.name == 'posix':
+        os.system("clear")
 
 
 typingPrint(Fore.BLACK + Back.WHITE + "Bonus Round")
