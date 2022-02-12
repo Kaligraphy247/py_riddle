@@ -6,7 +6,9 @@ riddles from https://parade.com/947956/parade/riddles/
 """
 
 
-import splash, time, sys, os, colorama
+# import splash, time, sys, os, colorama
+import time, sys, os, colorama
+
 from colorama import Fore, Style
 from yachalk import chalk
 
@@ -17,7 +19,7 @@ def typingPrint(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
-        time.sleep(0.05) # 0.5 for half a second... extra decimal places to make typePrint faster e.g 0.005
+        time.sleep(0.005) # 0.5 for half a second... extra decimal places to make typePrint faster e.g 0.005
 
 def clearScreen():
     if os.name == 'nt':
@@ -26,38 +28,56 @@ def clearScreen():
         os.system("clear")
 
 def right_ans(text):
-    return chalk.green(text)
+    return chalk.blue.bold.italic(text)
 
 def wrong_ans(text):
     return chalk.red.bold(text)
 
-print(right_ans("Hello ME"))
-print(wrong_ans("wrong ans"))
+def correct(text):
+    return chalk.green.bold(text)
+
+def question(text):
+    return chalk.yellow.bold(text)
+
+def list_answer(list):# -> list:
+    return [print(f"'{chalk.green.bold(x)}'", end=' ') for x in list]
+    
+
+def er(list):
+    for x in list:
+        print(f"'{chalk.green.bold(x)}'", end=' ')
 
 
-# # PROGRAM STARTS HERE...
-# typingPrint(Fore.GREEN + "Some Riddles to test your knowledge!\n")
+print(wrong_ans(text="wrong test"))
+print(chalk.green_bright("Green bright"))
+
+# typingPrint("Some Riddles to test your knowledge!\n")
 # time.sleep(2)
 # typingPrint("Some Riddles may have one word answers.\n")
-# time.sleep(1)
+# time.sleep(2)
 # typingPrint("Let's start with something simple.\n")
-# time.sleep(1)
-# print(Fore.RESET)
+# time.sleep(2)
 
-# typingPrint(Fore.YELLOW + "1. What has to be broken before you can use it?\n")
-# answer01 = str(input().lower())
-# if answer01 == "egg":
-#     typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n") 
-#     print(Style.RESET_ALL, Fore.RESET)
-# elif answer01 == "an egg":
-#     typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
-#     print(Style.RESET_ALL, Fore.RESET)
-# elif answer01 == "eggs":
-#      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
-#      print(Style.RESET_ALL, Fore.RESET)
-# else: 
-#     typingPrint(Style.BRIGHT + Fore.RED + "Wrong, correct answer is 'an Egg/Eggs'\nNext...\n")
-#     print(Style.RESET_ALL, Fore.RESET)
+
+answer01 = ["egg", "an egg", "eggs"]
+typingPrint(question("1. What has to be broken before you can use it?\n"))
+question01 = str(input().lower())
+if question01 in answer01:
+    print(f"Your answer '{right_ans(question01)}' is correct!")
+    time.sleep(0.5)
+    print(f"{correct('You are right!!')}.\nNext...\n")
+else:
+    typingPrint(f"Your answer '{wrong_ans(question01)}' is wrong 😢 The right answer should be...\n")
+    time.sleep(1.5)
+    list_answer(list=answer01)
+    print("\nNext...\n")
+
+
+answer02 = ["candle", "a candle", "candles"]
+answer03 = []
+answer04 = []
+answer05 = []
+
 
 
 # typingPrint(Fore.YELLOW + "2. I’m tall when I’m young, and I’m short when I’m old. What am I?\n")
@@ -269,5 +289,4 @@ print(wrong_ans("wrong ans"))
 #     clearScreen()
 
 # import bye
-
-# #PROGRAM ENDS HERE...
+# #PROGRAM ENDS
