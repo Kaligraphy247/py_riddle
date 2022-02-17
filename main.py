@@ -7,93 +7,60 @@ riddles from https://parade.com/947956/parade/riddles/
 
 
 # import splash, time, sys, os, colorama
-import time, sys, os, colorama
-
-from colorama import Fore, Style
+import time, sys, os
+from modules.timey import Timey as tp
+from modules import starter_riddle, hard_riddles, bonus_riddles
 from yachalk import chalk
 
+#time for secs param
+sec = 0.005
 
 #FUNCTIONS HERE
-def typingPrint(text):
-    """ Displays text incessantly using the time.sleep() method """
-    for character in text:
-        sys.stdout.write(character)
-        sys.stdout.flush()
-        time.sleep(0.005) # 0.5 for half a second... extra decimal places to make typePrint faster e.g 0.005
-
 def clearScreen():
     if os.name == 'nt':
         os.system("cls")
     elif os.name == 'posix':
         os.system("clear")
 
-def right_ans(text):
-    return chalk.blue.bold.italic(text)
+def bold_and_underline(text):
+    return chalk.white.bold.underline(text)
 
-def wrong_ans(text):
-    return chalk.red.bold(text)
+tp(bold_and_underline("Some Riddles to test your knowledge!"), sec)
+time.sleep(1.5)
+tp(bold_and_underline("Some Riddles may have one word answers."), sec)
+time.sleep(1.5)
+tp(bold_and_underline("Let's start with something simple."), sec)
+time.sleep(1.5)
+clearScreen()
 
-def correct(text):
-    return chalk.green.bold(text)
+starter_riddle.riddle()
+time.sleep(5)
+clearScreen()
 
-def question(text):
-    return chalk.yellow.bold(text)
+tp(f"Now to some {chalk.red.bold('Hard Riddles')} ... ", sec)
+time.sleep(2)
+clearScreen()
 
-def list_answer(list):# -> list:
-    return [print(f"'{chalk.green.bold(x)}'", end=' ') for x in list]
-    
+hard_riddles.riddle()
+time.sleep(3)
+clearScreen()
+tp(f"{chalk.bg_gray.white('Some Bonus Riddles')}🎃😀😁\n ", sec)
+tp(f"{chalk.yellow('Do you want to play bonus round? (y/n)')}", sec)
 
-def er(list):
-    for x in list:
-        print(f"'{chalk.green.bold(x)}'", end=' ')
+query =  str(input("")).lower().strip()
 
-
-print(wrong_ans(text="wrong test"))
-print(chalk.green_bright("Green bright"))
-
-# typingPrint("Some Riddles to test your knowledge!\n")
-# time.sleep(2)
-# typingPrint("Some Riddles may have one word answers.\n")
-# time.sleep(2)
-# typingPrint("Let's start with something simple.\n")
-# time.sleep(2)
-
-
-answer01 = ["egg", "an egg", "eggs"]
-typingPrint(question("1. What has to be broken before you can use it?\n"))
-question01 = str(input().lower())
-if question01 in answer01:
-    print(f"Your answer '{right_ans(question01)}' is correct!")
-    time.sleep(0.5)
-    print(f"{correct('You are right!!')}.\nNext...\n")
+if query == 'y':
+    bonus_riddles.riddle()
+elif query == 'n':
+    print("goodbye")
+    exit()
 else:
-    typingPrint(f"Your answer '{wrong_ans(question01)}' is wrong 😢 The right answer should be...\n")
-    time.sleep(1.5)
-    list_answer(list=answer01)
-    print("\nNext...\n")
-
-
-answer02 = ["candle", "a candle", "candles"]
-answer03 = []
-answer04 = []
-answer05 = []
-
-
-
-# typingPrint(Fore.YELLOW + "2. I’m tall when I’m young, and I’m short when I’m old. What am I?\n")
-# answer02 = str(input().lower())
-# if answer02 == "candle":
-#     typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
-#     print(Style.RESET_ALL, Fore.RESET)
-# elif answer02 == "a candle":
-#     typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
-#     print(Style.RESET_ALL, Fore.RESET)
-# elif answer02 == "candles":
-#      typingPrint(Fore.GREEN + Style.BRIGHT + "Correct!\n")
-#      print(Style.RESET_ALL, Fore.RESET)
-# else:
-#     typingPrint(Style.BRIGHT + Fore.RED + "Wrong, the right answer is 'candle'\nNext...\n")
-#     print(Style.RESET_ALL, Fore.RESET)
+    tp(f"{chalk.white_bright('Didnt get that, Try again some other time ?')}", sec)
+    time.sleep(1)
+    tp("Goodbye", sec)
+    time.sleep(2.5)
+    clearScreen()
+    quit()
 
 
 # typingPrint(Fore.YELLOW + "3. What is full of holes but still holds water?\n")

@@ -1,9 +1,10 @@
 from yachalk import chalk
-from timey import Timey as tp
+from modules.timey import Timey as tp
 import time, random
 
 
 def riddle():
+    '''Riddle Function'''
     # sleep settings
     sec = 0.005
 
@@ -59,4 +60,5 @@ def riddle():
             list_answer(list=value)
             time.sleep(1.5)
             tp("\nNext...\n", sec)
+    tp("Oops, that's all for now 😁", sec)
 

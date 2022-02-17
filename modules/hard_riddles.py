@@ -1,8 +1,9 @@
 from yachalk import chalk
-from timey import Timey as tp
+from modules.timey import Timey as tp
 import time, random
 
 def riddle():
+    '''Riddle Function'''
     # sleep settings
     sec = 0.005
 
@@ -29,6 +30,8 @@ def riddle():
     def list_answer(list) -> list:
         return [print(f"'{chalk.green.bold(x)}'", end=' ') for x in list]
 
+    correct_counter = 0
+    wrong_counter   = 0
 
     sad_emoji = ['😢', '😔', '😓', '😥', '😢', '💔']
     happy_emoji = ['😀', '😁', '😊', '😂', '🥳', '🍾']
@@ -51,7 +54,7 @@ def riddle():
         questions[1]: ["river", "a river", "rivers"],
         questions[2]: ["light"],
         questions[3]: ["mirror", "a mirror", "mirrors"],
-        questions[4]: ["footsteps", "footstep"],
+        questions[4]: ["footsteps", "footstep", "steps"],
         questions[5]: ["key", "a key", "keys"],
         questions[6]: ["money"],
         questions[7]: ["fire"],
@@ -66,12 +69,14 @@ def riddle():
         if quest in value:
             tp(f"Your answer '{right_ans(quest)}' is correct {happy()}", sec)
             tp(f"{correct('You are right!!!')}\nNext...\n", sec)
+            correct_counter += 1
+
 
         else:
             tp(f"Your answer '{wrong_ans(quest)}' is wrong {sad()} The right answer should be...", sec)
-            #tp("")
+            wrong_counter += 1
             time.sleep(1.0)
             list_answer(list=value)
             time.sleep(1.5)
             tp("\nNext...\n", sec)
-
+    tp(f"Your total is in this round is {correct_counter} out of {len(questions)}", sec)
