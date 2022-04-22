@@ -70,4 +70,4 @@ def riddle():
             time.sleep(1.5)
             tp("\nNext...\n", sec)
 
-    tp(f"Your total is in this round is {correct_counter} out of {len(questions)}", sec)
+    tp(f"Your total score in this round is {correct_counter} out of {len(questions)}", sec)
